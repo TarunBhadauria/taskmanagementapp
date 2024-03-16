@@ -1,0 +1,24 @@
+.taskFrom {
+    margin-top: 20px;
+  }
+  
+  .taskInput,.taskFrom {
+    margin-right: 10px;
+  }
+
+input{
+  padding: 5px;
+  border-radius: 3px;
+}
+.addTask{
+  padding: 8px 6px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: #34495e;
+  color: white;
+}
+.addTask:hover{
+  cursor: pointer;
+}
+
+  

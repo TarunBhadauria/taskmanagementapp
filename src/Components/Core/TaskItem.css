@@ -1,0 +1,50 @@
+.taskItem {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .completed{
+    font-size: 20px;
+    font-size: larger;
+    color: #2ecc71;
+  }
+
+  .icon{
+    font-size: 20px;
+  }
+
+  .icon:hover{
+    cursor: pointer;
+  }
+
+  .notCompleted{
+    color:#e74c3c
+  }
+  
+
+  .delete:hover{
+    color: #e74c3c;
+    transition: all;
+    transition-duration: 200;
+  }
+
+  .update:hover{
+    color: #f1c40f;
+    transition: all;
+    transition-duration: 200;
+  }
+
+  .options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
