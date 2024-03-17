@@ -16,11 +16,19 @@ const TaskForm = () => {
   }, []);
 
 
-  const checkDate = (actualDate,selectedDate) => {
-     actualDate = Number(`${actualDate.getFullYear()}${actualDate.getMonth() + 1}${actualDate.getDate()}`);
-     selectedDate = Number(`${selectedDate.getFullYear()}${selectedDate.getMonth() + 1}${selectedDate.getDate()}`);
-     return selectedDate>=actualDate;
+  const checkDate = (actualDate, selectedDate) => {
+    const formatDate = (date) => {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const day = String(date.getDate()).padStart(2, '0');
+      return Number(`${year}${month}${day}`);
+    };
+
+    const formattedActualDate = formatDate(actualDate);
+    const formattedSelectedDate = formatDate(selectedDate);
+    return formattedSelectedDate >= formattedActualDate;
   }
+
 
   const handleSubmit = (e) => {
 
